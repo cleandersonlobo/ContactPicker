@@ -60,7 +60,7 @@ public class ContactPickerPlugin extends CordovaPlugin {
                 if (contact != null) {
                     intent.putExtra(Intents.Insert.NAME, contact.getString("displayName"));
                     intent.putExtra(Intents.Insert.EMAIL, contact.getString("email"));
-                    intent.putExtra(Intents.Insert.PHONE_TYPE, ContactsContract.CommonDataKinds.Phone.TYPE_MOBILE);
+                    intent.putExtra(Intents.Insert.PHONE_TYPE, contact.getString("type"));
                     intent.putExtra(Intents.Insert.PHONE, contact.getString("mobileNumber"));
                 }
             } catch (Exception ex) {
