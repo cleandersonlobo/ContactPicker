@@ -36,9 +36,9 @@ The method which will return a JSON. Example:
 ```js
 //you can prefilled variable by add contact object 
 var contact = {};
-contact.displayName = "displayName";
-contact.email = "email";
-contact.phoneNumber = "phoneNumber";
+contact.displayName = "John Doe";
+contact.email = "johndoe@test.com";
+contact.mobileNumber = "(555) 555-5555";
 window.plugins.ContactPicker.addContact(contact, function(contactInfo) {
     alert(contactInfo.displayName + " " + contactInfo.phones[0] + " " + contactInfo.email);
 });
